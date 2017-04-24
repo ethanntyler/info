@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethan Tyler</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="main.css"/>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+            <link rel="target" href="thehoneycombproject.org">
+            <link rel="icon" href="theecopy.png" type="image/x-icon">
+            <script src="scroll.js"></script>
+        
+
+
+    </head>
+    <body>
+        
+       
+<div id="wrapper">
+      <!--  <a href="mailto:ethanntyler@gmail.com">
+            
+            <i class="material-icons" style="font-size: 3.5vw; line-height: 48px; margin-top: 1vh; margin-bottom: 10px; margin-right: -13vw; color: #1c4f3f;">email</i>
+            
+        </a>
+        -->
+    
+    <div class="dropdown">
+  <button class="dropbtn">Contact</button>
+  <div class="dropdown-content">
+    <a href="mailto:ethanntyler@gmail.com">Apple Mail</a>
+    <a href="ethanntyler@gmail.com">Copy Email</a>
+  </div>
+</div>
+
+        <a href="resume.png" target="_resume.png">
+        <button class="dropbtn" margin-left="2vw">Resume</button>
+    </a>
+    
+        <header class='box'>
+            Ethan Tyler<hr width="960vw" align="center" color="#1c4f3f">
+        </header>
+       
+    <img src="skip1.jpg" alt="skip">
+    <!--
+    <ul class="topnav" id="myTopnav">
+        <li><a href="A.html">Academics</a></li>
+        <li><a href="A.html">Athletics</a></li>
+        <li><a href="O.html">Racing</a></li>
+    </ul> -->
+        
+            <section class='box'> 
+                Bio<hr width="35vw" align="center" color="#1c4f3f">Hi, I'm Ethan. I am currently a junior at the University of Chicago Laboratory Schools. This website was coded using HTML and CSS and outlines the academic and extra curricular aspects of my highschool career, including clubs, sports and community service.
+
+            </section>
+        
+            
+        </body>
+    </div> 
+    
+
+
+    
+<body2>
+    <div class="page two">
+        <section class='education'>
+            Finance <hr width="90vw" align="left" color="#1c4f3f"> The Finance Club at the Lab Schools educates students about the world of finance while also encouraging real investing using donations from Lab alumni and leaders. I have been a member of the club since joining sophomore year in 2014 and am currently on the board of students. 
+        </section>
+        
+        <section class='education'>
+        
+        </section>
+    </div>
+    
+    <div class="page three">
+        <section class='education'>
+            Community Service <hr width="90vw" align="left" color="#1c4f3f"> During the next three months, I will be working seven other students with the <a href="https://thehoneycombproject.org"> Honeycomb Project</a> to lead and manage a service project for the homeless at <a href="lacasanorte.org"> La Casa Norte</a> homeless shelter. 
+        </section>
+    </div>
+    <div class="page four">
+    </div>
+    <div class="page five">
+      <!--  <section class="slideshow-container">
+          
+  <section class="mySlides fade">
+    <img src="florida1.jpg" style="width:100%">
+  </section>
+
+  <section class="mySlides fade">
+    <img src="florida2.jpg" style="width:100%">
+  </section>
+
+  <section class="mySlides fade">
+    <img src="florida3.jpg" style="width:100%">
+    </section>            
+            <section class="mySlides fade">
+    <img src="florida4.jpg" style="width:100%">
+  </section>
+            
+            <section class="mySlides fade">
+    <img src="florida5.jpg" style="width:100%">
+  </section>
+            
+<section class="mySlides fade">
+    <img src="canada.jpg" style="width:100%">
+  </section>
+            
+            <section class="mySlides fade">
+    <img src="skip1.jpg" style="width:100%">
+  </section>
+            
+            <section class="mySlides fade">
+    <img src="skip3.jpg" style="width:100%">
+  </section>
+            
+            <section class="mySlides fade">
+    <img src="skip2.jpg" style="width:100%">
+  </section>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+        
+        
+<br>
+
+<section style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+</section> -->
+        
+        <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+        
+        <div class="row">
+  <div class="column">
+    <img src="florida1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="florida2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="florida3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="florida4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="florida1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="florida2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="florida3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="florida4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+<!--
+    <div class="column">
+      <img class="demo" src="florida1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="florida2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="florida3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="florida4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+        -->
+        <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+        </script>
+    </div>
+</body2>
+</html>

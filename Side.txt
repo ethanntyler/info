@@ -1,0 +1,142 @@
+SIDE BY SIDE CSS
+section {
+    height: 200px;
+    margin-right: 27px;
+    display: inline-block;
+    background-color: RGB(51, 26, 37);
+    Margin-top: 20px;  
+    width: 240px;
+    font-size: 25px;
+}
+
+article {
+    background-color: black;
+    height: 100px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 15%;
+    border: dotted;
+    border-width: medium;
+    border-color: aliceblue;
+    font-size: 25px;
+}
+   
+
+/* Spectral G */
+aside {
+    background-color: black;
+    height: 200px;
+    display: inline-block; 
+    margin: 0 auto;
+    margin-top: 20px;
+    vertical-align: top;
+        width: 240px; 
+    font-size: 25px;
+}
+
+/* Spectral M Style */
+section1 {
+    height: 200px;
+        width: 240px;
+    margin-right: auto; 
+    display: inline-block;
+    background-color: black;
+    Margin-top: 20px;
+    vertical-align: top;
+    margin-left: 27px;
+    font-size: 25px;
+}
+
+GENERAL HTML
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethan Tyler</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <a href="mailto:ethanntyler@gmail.com">
+        <i class="material-icons" style="font-size: 30px; line-height: 48px; margin-top: 10px; margin-bottom: 10px; color: white;">email</i>
+        </a>
+        
+    
+
+        <header class='box'>
+            
+            Ethan Tyler
+            <h1>
+            
+            </h1>
+        </header>
+        <div id="wrapper">
+            
+            <ul class="topnav" id="myTopnav">
+  <li><a href="https://www.j3competition.com">Academics</a></li>
+  <li><a href="A.html">Athletics</a></li>
+    <li><a href="O.html">Racing</a></li>
+  
+                
+  <li class="icon"> 
+    
+  </li>
+</ul>
+            <section class='box'>The Highschool Design Communication course provided the resources and knowledge to create and code this website along with the several 5-6 week projects shown below.
+                
+                
+                <article class='box'>&lt;article&gt;
+                    
+                    
+                    
+            
+                </article>
+            </section>
+        
+            <aside class='box'>&lt;aside&gt;
+        
+            </aside>
+            
+            <section1 class='box'>Spectral M
+            
+        </section1>
+            
+            </style>
+</head>
+<body>
+
+<div class="img">
+  <a target="_blank" href="sbno.jpg">
+    <img src="sbno.jpg" alt="sbno" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+        </div>
+        
+
+        <footer class='box'>&lt;footer&gt;
+        
+        </footer>
+        
+    </body>
+</html>
+
+ <a class="tyler_web" onclick="plusDivs(-1)">&#10094;</a>
+        <img class="tyler_web" src="bunny.jpg">
+<img class="tyler_web" src="fox.jpg">
+<img class="tyler_web" src="lion.jpeg">
+   
+<a class="tyler_web" onclick="plusDivs(+1)">&#10095;</a>
+
+
+
+<input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-5" class="next">&#x203a;</label>
+		</div>
+    </li>
