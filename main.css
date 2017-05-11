@@ -74,7 +74,7 @@ material-icons {
     background-color: #1c4f3f;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 90%;
     border: none;
     cursor: pointer;
     font-family: "Dosis";
@@ -220,6 +220,7 @@ section {
     font-size: 4.5vh;
    /* font-size-adjust: auto; */
     float: right;
+    text-align: left;
 }
 
 .left {
@@ -249,6 +250,20 @@ section {
     font-family: "Dosis";
     float: right;
     margin-right: 3vw;
+}
+
+.racebio{
+ vertical-align: top;
+    height: 70vh;
+    margin: 0 auto;
+    margin-left: 3vw;
+    margin-top: 14vh;
+    background-color: #c7c8c9; 
+    width: 30vw;
+    font-size: 4vh;
+    text-align: left;
+    font-family: "Dosis";
+    float: left;
 }
 
 .imgright{
@@ -281,67 +296,32 @@ section {
     
 }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 10px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
+* {box-sizing:border-box}
 
-/* Modal Content */
-.modal-content {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
-  background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
+  margin-top: -22px;
   padding: 16px;
-  margin-top: -50px;
-  color: blueviolet;
+  font-color: #1c4f3f;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -351,9 +331,20 @@ section {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.prev:hover, .next:hover {
+  background-color: #1c4f3f;
+    color: #c7c8c9;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Number text (1/3 etc) */
@@ -365,30 +356,38 @@ section {
   top: 0;
 }
 
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-img.demo {
-  opacity: 0.6;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-img.hover-shadow {
-  transition: 0.3s
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: -1;
-    
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 /*
 article {
