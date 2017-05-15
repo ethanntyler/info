@@ -4,69 +4,37 @@
         <title>Ethan Tyler</title>
             <meta charset="utf-8">
             <link rel="stylesheet" type="text/css" href="mobile.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
-        <link rel="icon" href="theecopy.png" type="image/x-icon">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+            <link rel="icon" href="theecopy.png" type="image/x-icon">
     </head>
     
-    <video src="mobile.MOV" id="vid" playsinline autoplay muted loop>
-  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-
-</video>
-    
+    <video src="mobile.MOV" id="vid" playsinline autoplay muted loop></video>
     
 <script>
-    var vid = document.getElementById("vid");
-    vid.playbackrate=.5;
-
-
-if (window.matchMedia('(prefers-reduced-motion)').matches) {
-    vid.removeAttribute("autoplay");
-    vid.playbackrate= .5;
-}
-
-function vidFade() {
-  vid.classList.add("stopfade");
-    
-}
-
-vid.addEventListener('ended', function()
-{
+        var vid = document.getElementById("vid");
+        vid.playbackrate=.5;
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        vid.removeAttribute("autoplay");
+        vid.playbackrate= .5;
+    }
+    function vidFade() {
+        vid.classList.add("stopfade");
+    }
+    vid.addEventListener('ended', function()
+                         {
 // only functional if "loop" is removed 
-vid.playbackrate= .5;
+        vid.playbackrate= .5;
 // to capture IE10
-vidFade();
-}); 
-
-
-
-
-    </script>
+        vidFade();
+    }); 
+</script>
     
-     
-        <a href="resume.png" target="_resume.png">
-        <button class="dropbtn" margin-left="2vw">Resume</button>
-    </a>
-    
-        <header class='box'>
+            <header class='box'>
             Ethan Tyler<hr width="40%" align="center" color="#1c4f3f">
-        </header>
-       
-    
-    <!--
-    <ul class="topnav" id="myTopnav">
-        <li><a href="A.html">Academics</a></li>
-        <li><a href="A.html">Athletics</a></li>
-        <li><a href="O.html">Racing</a></li>
-    </ul> -->
-        
+            </header>      
             <section class='box'> 
-                Hi, I'm Ethan. I am currently a junior at the University of Chicago Laboratory Schools. This website was coded using HTML and CSS and outlines the academic and extra curricular aspects of my highschool career, including clubs, sports and community service.
-
+                Hi, I'm Ethan. I am currently a junior at the University of Chicago Laboratory Schools. Check out my full website on a computer to find out more about my life. 
             </section>
-        
-            
         </body>
     </div> 
-</html>    
-
-            
+</html>           
